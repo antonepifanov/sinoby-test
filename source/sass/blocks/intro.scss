@@ -1,0 +1,58 @@
+.intro {
+  position: relative;
+  min-height: size(756px);
+
+  @include vp-768 {
+    min-height: 300px;
+  }
+
+  &__image {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1920 / 756;
+    min-height: 100%;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: size(63px) 0;
+
+    @include vp-768 {
+      padding: 30px 0;
+    }
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: size(10px);
+    position: relative;
+    padding: size(17px) size(124px) size(20px);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0) 100%);
+    backdrop-filter: blur(size(5px));
+
+    @include vp-768 {
+      padding: 10px 20px;
+    }
+
+    span {
+      color: $color-blue;
+      line-height: 100%;
+    }
+  }
+
+  &__button {
+    font-size: size(13px);
+    min-height: size(43px);
+    min-width: size(183px);
+  }
+}
