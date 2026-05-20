@@ -5,35 +5,29 @@
 
   input {
     flex-grow: 1;
-    min-height: size(48px);
+    min-height: size(60px);
     padding: size(12px) size(10px);
     background-color: rgba($color-default-white, 0.85);
-    border: size(1px) solid $color-default-white;
-    border-radius: size(3px);
-    color: $color-jaguar;
-    font-size: size(18px);
+    border: size(1px) solid $color-default-black;
+    color: $color-default-black;
+    font-size: size(16px);
     outline: none;
     cursor: pointer;
     transition:  border-radius $trans-default, border $trans-default, background-color $trans-default, color $trans-default;
 
+    @include vp-768 {
+      font-size: 12px;
+      padding: 10px;
+      min-height: 45px;
+    }
+
     &::placeholder {
-      color: $color-jaguar;
+      color: rgba($color-default-black, 0.85);
     }
 
     @include hover-focus {
       border: size(1px) solid rgba($color-default-black, 0.5);
     }
-  }
-
-  &__error {
-    position: absolute;
-    top: size(-10px);
-    transform: translateY(-100%);
-    font-size: size(18px);
-    left: 0;
-    color: $color-red;
-    opacity: 0;
-    transition: opacity $trans-default;
   }
 
   &.is-invalid {
@@ -48,11 +42,15 @@
 
   .input-message {
     position: absolute;
-    top: size(-10px);
+    top: size(-5px);
     transform: translateY(-100%);
-    font-size: size(18px);
+    font-size: size(12px);
     left: 0;
     color: $color-red;
     transition: opacity $trans-default;
+
+    @include vp-768 {
+      font-size: 10px;
+    }
   }
 }

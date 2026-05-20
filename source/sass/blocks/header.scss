@@ -78,6 +78,7 @@
 
     svg {
       width: size(21px);
+      height: 100%;
     }
 
     @include hover-focus {
@@ -99,6 +100,7 @@
 
     svg {
       width: size(17px);
+      height: 100%;
     }
   }
 

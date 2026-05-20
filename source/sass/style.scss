@@ -1,4 +1,6 @@
 // Vendor
+@import "vendor/fancybox";
+@import "vendor/swiper";
 
 // Global
 @import "global/variables";
@@ -16,10 +18,10 @@
 @import "elements/title";
 @import "elements/button";
 @import "elements/custom-input";
+@import "elements/form";
 
 // Blocks
 @import "blocks/header";
 @import "blocks/intro";
-@import "blocks/order";
-@import "blocks/form";
-@import "blocks/footer";
+@import "blocks/timer";
+@import "blocks/models";

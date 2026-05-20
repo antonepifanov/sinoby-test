@@ -1,0 +1,20 @@
+.form {
+  .form__fields {
+    display: flex;
+    flex-direction: column;
+    gap: size(30px);
+    margin-bottom: size(30px);
+  }
+
+  &__button {
+    width: 100%;
+
+  }
+
+  &__response {
+    display: none;
+    align-items: center;
+    text-align: center;
+    margin-top: size(30px);
+  }
+}

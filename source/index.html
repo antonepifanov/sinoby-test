@@ -63,13 +63,13 @@
                 </ul>
                 <ul class="header__buttons">
                   <li class="header__button-wrapper">
-                    <a class="header__button" type="button" data-close-menu>ПОДОБРАТЬ КОМПЛЕКТАЦИЮ</a>
+                    <a class="header__button" type="button" href="#feedback" data-fancybox data-close-menu>ПОДОБРАТЬ КОМПЛЕКТАЦИЮ</a>
                   </li>
                   <li class="header__button-wrapper">
-                    <a class="header__button" type="button" data-close-menu>ТЕСТ-ДРАЙВ</a>
+                    <a class="header__button" type="button" href="#feedback" data-fancybox data-close-menu>ТЕСТ-ДРАЙВ</a>
                   </li>
                   <li class="header__button-wrapper">
-                    <a class="header__button" type="button" data-close-menu>КОНТАКТЫ</a>
+                    <a class="header__button" type="button" href="#feedback" data-fancybox data-close-menu>КОНТАКТЫ</a>
                   </li>
                 </ul>
               </nav>
@@ -88,137 +88,185 @@
           <div class="container">
             <div class="intro__wrapper">
               <h1 class="intro__title title title--h1">Увеличиваем выгоды на&nbsp;HAVAL <span>в&nbsp;Химках к&nbsp;Чёрной пятнице!</span></h1>
+              <a class="intro__button button button--blue" href="#feedback" data-fancybox>Зафиксировать условия</a>
             </div>
           </div>
         </section>
-        <section class="order" id="order">
+        <section class="timer">
           <div class="container">
-            <div class="order__wrapper">
-              <div class="order__text">
-                <h2 class="order__title title title--h2">Оформление <span>заказа</span></h2>
-                <p>Перед заполнением формы ознакомьтесь с&nbsp;нашей схемой работы!</p>
+            <h2 class="timer__title title title--h3">Оставьте заявку и&nbsp;зафиксируйте условия</h2>
+            <div class="timer__wrapper">
+              <div class="timer__countdown">
+                <!-- Sinoby Timer -->
+                <style>/* Фиксирует высоту таймера до загрузки */.sinoby-timer[data-sinoby-reserve="sinoby-9hzn3f"]{display:block;min-height:114px;}@media (max-width:767px){.sinoby-timer[data-sinoby-reserve="sinoby-9hzn3f"]{min-height:83px;}}</style>
+                <div class="sinoby-timer"
+                  data-sinoby-reserve="sinoby-9hzn3f"
+                  data-config='{
+                  "type": "fixed-end",
+                  "preset": "rings-soft",
+                  "schedule": {
+                    "endAt": "2026-06-10T00:00:00"
+                  },
+                  "style": {
+                    "digitsFont": "Open Sans, sans-serif",
+                    "digitGap": 8,
+                    "digitColor": "#000000",
+                    "labelSize": 18,
+                    "labelGap": 0,
+                    "labelColor": "#000000",
+                    "cardBackgroundColor": "#F3F3F3",
+                    "ringCurrentColor": "#00cabf",
+                    "ringRemainingColor": "#d6d6d6",
+                    "ringThickness": 5,
+                    "ringRadius": 31
+                  }
+                }'
+                  data-lazy="true"></div>
+                <script src="//timer.sinoby.ru/public/assets/embed/timer-core.min.js?v=20260519a"></script>
+                <!-- /Sinoby Timer -->
               </div>
-              <ul class="order__schema">
-                <li class="order__schema-item" style="--schema-icon: url('../img/svg/search.svg')">Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit amet</li>
-                <li class="order__schema-item" style="--schema-icon: url('../img/svg/percent.svg')">Сonsecteturadipiscing elit</li>
-                <li class="order__schema-item" style="--schema-icon: url('../img/svg/file.svg')">Sed do&nbsp;eiusmod tempor</li>
-                <li class="order__schema-item" style="--schema-icon: url('../img/svg/message.svg')">Esse&nbsp;cillum&nbsp;dolore&nbsp;eu fugiat</li>
-                <li class="order__schema-item" style="--schema-icon: url('../img/svg/money.svg')">Excepteur sint occaecat cupidatat non proident</li>
-              </ul>
-              <div class="order__form form" data-form-validate data-callback="base">
-                <form id="form" method="post" enctype="multipart/form-data" novalidate>
-                  <div class="form__fields">
-                    <div class="form__field form__select custom-select" data-select data-validate-type="select" data-name="system" data-required>
-                      <span class="custom-select__error">Поле обязательно к заполнению</span>
-                      <span class="custom-select__placeholder">Выберите тип системы</span>
-                      <button class="custom-select__button" type="button">
-                        <span class="custom-select__text"></span>
-                        <span class="custom-select__icon">
-                          <svg width="20" height="20" aria-hidden="true">
-                            <use href="img/sprite.svg#arrow-icon"></use>
-                          </svg>
-                        </span>
-                      </button>
-                      <div class="custom-select__list">
-                        <ul class="custom-select__items" role="listbox">
-                          <li class="custom-select__item" tabindex="0" data-select-value="Sed">Sed ut perspiciatis</li>
-                          <li class="custom-select__item" tabindex="0" data-select-value="Nemo">Nemo enim ipsam</li>
-                          <li class="custom-select__item" tabindex="0" data-select-value="Et">Et harum quidem</li>
-                          <li class="custom-select__item" tabindex="0" data-select-value="Temporibus">Temporibus autem</li>
-                          <li class="custom-select__item" tabindex="0" data-select-value="Itaque">Itaque earum rerum</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="form__field form__input custom-input" data-validate-type="email" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
-                      <label class="visually-hidden" for="email">Введите ваш e-mail</label>
-                      <input id="email" type="email" name="email" placeholder="Ваш e-mail">
-                    </div>
-                    <div class="form__field form__input custom-input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-required>
-                      <label class="visually-hidden" for="name">Введите ваше имя</label>
-                      <input id="name" type="text" name="name" placeholder="Ваше имя">
-                    </div>
-                  </div>
-                  <div class="form__data">
-                    <div class="form__range">
-                      <div class="form__range-field">
-                        <label for="range">Sed ut&nbsp;perspiciatis, unde omnis iste natus</label>
-                        <input id="range" type="text" name="range" tabindex="-1" readonly>
-                      </div>
-                      <div class="range"></div>
-                    </div>
-                    <div class="form__file input-upload" data-upload="file">
-                      <label>
-                        <input type="file" name="upload-file">
-                        <span class="form__file-button button button--white">
-                          <svg width="17" height="20" aria-hidden="true">
-                            <use href="img/sprite.svg#file-icon"></use>
-                          </svg>
-                          Прикрепить файл
-                        </span>
-                      </label>
-                    </div>
-                  </div>
-                  <button class="form__button button button--blue" type="submit">Отправить</button>
-                  <div class="form__response"></div>
-                </form>
-              </div>
+              <a class="timer__button button button--blue" href="#feedback" data-fancybox>Зафиксировать условия</a>
             </div>
           </div>
         </section>
-      </main>
-      <footer class="footer">
-        <div class="container">
-          <div class="footer__wrapper">
-            <p class="footer__copyright">&copy;&nbsp;2018 &laquo;LoremIpsum.net&raquo; Все права защищены.</p>
-            <ul class="footer__items">
-              <li class="footer__item">
-                <div class="footer__item-wrapper">
-                  <svg width="20" height="20" aria-hidden="true">
-                    <use href="img/sprite.svg#qiwi-icon"></use>
-                  </svg>
-                  Qiwi wallet
-                </div>
+        <section class="models">
+          <h2 class="visually-hidden">Модельный ряд</h2>
+          <div class="container">
+            <ul class="models__list">
+              <li class="models__item" data-colors-slider-container data-bullet-classes="black,white,gray">
+                <div class="models__item-label">В&nbsp;наличии <span>21&nbsp;автомобиль</span></div>
+                <a class="models__link" href="#feedback" data-fancybox>
+                  <div class="models__link-info">
+                    <h3 class="models__link-title title title--h2">HAVAL M6</h3>
+                    <b>Записаться <br>на&nbsp;тест-драйв</b>
+                  </div>
+                  <strong class="models__link-profit">Выгода до&nbsp;<span>410&nbsp;000&nbsp;₽</span></strong>
+                  <div class="models__link-colors">
+                    <div class="models__link-slider swiper" data-colors-slider>
+                      <ul class="models__link-slides swiper-wrapper">
+                        <li class="models__link-slide swiper-slide">
+                          <div class="models__link-image">
+                            <img class="swiper-lazy" src="./img/m6-black.webp" width="467" height="239" loading="lazy" alt="Фото">
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </li>
+                        <li class="models__link-slide swiper-slide">
+                          <div class="models__link-image">
+                            <img class="swiper-lazy" src="./img/m6-white.webp" width="467" height="239" loading="lazy" alt="Фото">
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </li>
+                        <li class="models__link-slide swiper-slide">
+                          <div class="models__link-image">
+                            <img class="swiper-lazy" src="./img/m6-gray.webp" width="467" height="239" loading="lazy" alt="Фото">
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+                <div class="swiper-pagination"></div>
+                <ul class="models__features">
+                  <li class="models__feature" style="--feature-icon: url('../img/svg/pricetags.svg')">Выгода по&nbsp;госпрограмме</li>
+                  <li class="models__feature" style="--feature-icon: url('../img/svg/wallet.svg')">Максимальные выгоды по&nbsp;трейд-ин</li>
+                  <li class="models__feature" style="--feature-icon: url('../img/svg/shield.svg')">КАСКО в&nbsp;подарок</li>
+                  <li class="models__feature" style="--feature-icon: url('../img/svg/wheel.svg')">Зимние шины в&nbsp;подарок</li>
+                  <li class="models__feature" style="--feature-icon: url('../img/svg/gift.svg')">Доп.оборудование на&nbsp;100 000р в&nbsp;подарок</li>
+                </ul>
+                <ul class="models__buttons">
+                  <li class="models__button">
+                     <a class="button button--blue" href="#feedback" data-fancybox>Узнать стоимость</a>
+                  </li>
+                  <li class="models__button">
+                     <a class="button button--black" href="#feedback" data-fancybox>Рассчитать кредит</a>
+                  </li>
+                  <li class="models__button">
+                     <a class="button button--white" href="#feedback" data-fancybox>Подобрать комплектацию</a>
+                  </li>
+                </ul>
               </li>
-              <li class="footer__item">
-                <div class="footer__item-wrapper">
-                  <svg width="20" height="20" aria-hidden="true">
-                    <use href="img/sprite.svg#yandex-icon"></use>
-                  </svg>
-                  Yandex Money
-                </div>
-              </li>
-              <li class="footer__item">
-                <div class="footer__item-wrapper">
-                  <svg width="20" height="20" aria-hidden="true">
-                    <use href="img/sprite.svg#web-icon"></use>
-                  </svg>
-                  Web Money
-                </div>
+              <li class="models__item" data-colors-slider-container data-bullet-classes="gray,black,white,red">
+                <div class="models__item-label">В&nbsp;наличии</div>
+                <a class="models__link" href="#feedback" data-fancybox>
+                  <div class="models__link-info">
+                    <h3 class="models__link-title title title--h2">HAVAL DARGO X</h3>
+                    <b>Записаться <br>на&nbsp;тест-драйв</b>
+                  </div>
+                  <strong class="models__link-profit">Выгода до&nbsp;<span>320&nbsp;000&nbsp;₽</span></strong>
+                  <div class="models__link-colors">
+                    <div class="models__link-slider swiper" data-colors-slider>
+                      <ul class="models__link-slides swiper-wrapper">
+                        <li class="models__link-slide swiper-slide">
+                          <div class="models__link-image">
+                            <img class="swiper-lazy" src="./img/dargo-gray.webp" width="467" height="239" loading="lazy" alt="Фото">
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </li>
+                        <li class="models__link-slide swiper-slide">
+                          <div class="models__link-image">
+                            <img class="swiper-lazy" src="./img/dargo-black.webp" width="467" height="239" loading="lazy" alt="Фото">
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </li>
+                        <li class="models__link-slide swiper-slide">
+                          <div class="models__link-image">
+                            <img class="swiper-lazy" src="./img/dargo-white.webp" width="467" height="239" loading="lazy" alt="Фото">
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </li>
+                        <li class="models__link-slide swiper-slide">
+                          <div class="models__link-image">
+                            <img class="swiper-lazy" src="./img/dargo-red.webp" width="467" height="239" loading="lazy" alt="Фото">
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+                <div class="swiper-pagination"></div>
+                <ul class="models__features">
+                  <li class="models__feature" style="--feature-icon: url('../img/svg/pricetags.svg')">Выгода по&nbsp;госпрограмме</li>
+                  <li class="models__feature" style="--feature-icon: url('../img/svg/wallet.svg')">Максимальные выгоды по&nbsp;трейд-ин</li>
+                  <li class="models__feature" style="--feature-icon: url('../img/svg/shield.svg')">КАСКО в&nbsp;подарок</li>
+                  <li class="models__feature" style="--feature-icon: url('../img/svg/wheel.svg')">Зимние шины в&nbsp;подарок</li>
+                  <li class="models__feature" style="--feature-icon: url('../img/svg/gift.svg')">Доп.оборудование на&nbsp;100 000р в&nbsp;подарок</li>
+                </ul>
+                <ul class="models__buttons">
+                  <li class="models__button">
+                     <a class="button button--blue" href="#feedback" data-fancybox>Узнать стоимость</a>
+                  </li>
+                  <li class="models__button">
+                     <a class="button button--black" href="#feedback" data-fancybox>Рассчитать кредит</a>
+                  </li>
+                  <li class="models__button">
+                     <a class="button button--white" href="#feedback" data-fancybox>Подобрать комплектацию</a>
+                  </li>
+                </ul>
               </li>
             </ul>
-            <ul class="footer__items">
-              <li class="footer__item">
-                <a class="footer__item-wrapper" href="mailto:info@ipsum228.com">
-                  <svg width="20" height="20" aria-hidden="true">
-                    <use href="img/sprite.svg#mail-icon"></use>
-                  </svg>
-                  info@ipsum228.com
-                </a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__item-wrapper" href="https://vk.com" target="_blank" rel="nofollow noopener noreferrer">
-                  <svg width="20" height="20" aria-hidden="true">
-                    <use href="img/sprite.svg#vk-icon"></use>
-                  </svg>
-                  Мы&nbsp;вконтакте
-                </a>
-              </li>
-            </ul>
+          </div>
+        </section>
+        <div class="modal" id="feedback" style="display: none;">
+          <div class="form" data-form-validate data-callback="base">
+            <form method="post" novalidate>
+              <div class="form__fields">
+                <div class="form__field form__input custom-input" data-validate-type="phone" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
+                  <label class="visually-hidden" for="phone">Введите ваш телефон</label>
+                  <input id="phone" type="tel" name="phone" placeholder="Ваш телефон">
+                </div>
+              </div>
+              <button class="form__button button button--blue" type="submit">Отправить</button>
+              <div class="form__response"></div>
+            </form>
           </div>
         </div>
-      </footer>
+      </main>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

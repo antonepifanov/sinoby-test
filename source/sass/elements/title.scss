@@ -14,11 +14,19 @@
   }
 
   &--h2 {
-    font-size: size(36px);
-    font-weight: 800;
+    font-size: size(22px);
+    line-height: size(31px);
+    font-weight: 500;
+    text-transform: uppercase;
 
     @include vp-768 {
-      font-size: 22px;
+      font-size: 15px;
     }
+  }
+
+  &--h3 {
+    text-transform: uppercase;
+    font-size: size(16px);
+    font-weight: 400;
   }
 }

@@ -62,3 +62,18 @@
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
+
+.modal {
+  max-width: max-content;
+  padding: size(30px);
+}
+
+.fancybox-button {
+  padding: size(8px) !important;
+  width: size(44px);
+  height: size(44px);
+}
+
+.sinoby-timer {
+  min-height: unset !important;
+}
