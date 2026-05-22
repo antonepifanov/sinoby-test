@@ -2792,6 +2792,7 @@ button {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  min-height: 100%;
 }
 .intro__wrapper {
   display: -webkit-box;
