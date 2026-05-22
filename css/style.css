@@ -2793,6 +2793,7 @@ button {
   -o-object-position: center;
      object-position: center;
   min-height: 100%;
+  aspect-ratio: unset;
 }
 .intro__wrapper {
   display: -webkit-box;
